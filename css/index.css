@@ -100,7 +100,6 @@ a {
 }
 
 .info .socialMedia .socialMediaWrapper div {
-  height: 60px;
   width: 60px;
   background: transparent;
   border: 1px solid #fff;
@@ -486,6 +485,53 @@ a {
   .info .deliverResult .deliverResultWrapper .deliveryResultDiscription p {
     width: auto;
     font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .navBar {
+    height: 40px;
+  }
+  .navBar .logo {
+    margin-left: 2px;
+  }
+  .navBar .logo img {
+    width: 50px;
+  }
+  .navBar .navigation {
+    margin-right: 2px;
+  }
+  .navBar .navigation div {
+    margin: 0px 0px 0px 0px;
+  }
+  .navBar .navigation div a {
+    font-size: 10px;
+  }
+  .info .socialMedia {
+    margin-top: 300px;
+    margin-left: 5px;
+  }
+  .info .socialMedia .socialMediaWrapper div {
+    height: 30px;
+    width: 30px;
+    margin-bottom: 10px;
+  }
+  .info .socialMedia .socialMediaWrapper div img {
+    padding: 5px;
+    width: 15px;
+  }
+  .info .deliverResult {
+    margin-top: 300px;
+  }
+  .info .deliverResult .deliverResultWrapper .deliveryResultHeader p {
+    font-size: 32px;
+    line-height: 10px;
+  }
+  .info .deliverResult .deliverResultWrapper .deliveryResultDiscription {
+    margin-top: 0px;
+  }
+  .info .deliverResult .deliverResultWrapper .deliveryResultDiscription p {
+    font-size: 18px;
   }
 }
 
@@ -2389,8 +2435,13 @@ a {
           flex-direction: row;
 }
 
+#ourProcess .ourProcessBody .ourProcessSlider .ourProcessSliderLeft .sliderTitle {
+  margin-bottom: 400px;
+}
+
 #ourProcess .ourProcessBody .ourProcessSlider .ourProcessSliderLeft .sliderTitle div {
   margin-top: 100px;
+  margin-right: 20px;
 }
 
 #ourProcess .ourProcessBody .ourProcessSlider .ourProcessSliderLeft .sliderTitle div p {
@@ -2702,6 +2753,80 @@ a {
     font-size: 20px;
     line-height: 40px;
     text-align: left;
+    color: #000;
+    text-align: justify;
+  }
+  #ourProcess .ourProcessBody .ourProcessSlider .ourProcessSliderMiddle .bottom {
+    margin-top: 40px;
+    width: 225px;
+    height: 65px;
+    background-color: #62B446;
+    -webkit-box-shadow: 0px 10px 45px rgba(98, 180, 70, 0.41);
+            box-shadow: 0px 10px 45px rgba(98, 180, 70, 0.41);
+  }
+  #ourProcess .ourProcessBody .ourProcessSlider .ourProcessSliderMiddle .bottom p {
+    font-family: Archer;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    line-height: 41px;
+    text-align: center;
+    color: #fff;
+  }
+  #ourProcess .ourProcessBody .ourProcessSlider .ourProcessSliderRight {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #ourProcess .ourProcessBody .ourProcessSlider {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-row: 100;
+    grid-area: 100%;
+    grid-column-gap: 0px;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  #ourProcess .ourProcessBody .ourProcessSlider .ourProcessSliderMiddle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #ourProcess .ourProcessBody .ourProcessSlider .ourProcessSliderMiddle .title p {
+    width: auto;
+    height: 51px;
+    font-family: Archer;
+    font-weight: normal;
+    font-size: 45px;
+    text-align: right;
+    color: #62b446;
+  }
+  #ourProcess .ourProcessBody .ourProcessSlider .ourProcessSliderMiddle .discription {
+    margin-top: 40px;
+  }
+  #ourProcess .ourProcessBody .ourProcessSlider .ourProcessSliderMiddle .discription p {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 5px;
+    width: 100%;
+    height: auto;
+    font-family: Gotham;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
     color: #000;
     text-align: justify;
   }
